@@ -11,7 +11,7 @@
     font-size: 24px;
 }
 
-body {
+%body {
     margin: 0;
     padding: 0;
     background-color: #cccccc;
@@ -36,6 +36,8 @@ body {
 }
 
 .portfolio {
+    @extend %body;
+
     background-image: url(./picture//bg-portfolio.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -68,7 +70,7 @@ body {
     &__link {
         @extend %link;
         color: #ffffff;
-        
+
         &:hover {
             border-bottom: 2px solid #ffffff;
             padding-bottom: 3px;
