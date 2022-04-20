@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfolio｜風景写真家「SNAPPERS」</title>
-<link href="main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="写真家のポートフォリオです。">
+  <title>Portfolio｜風景写真家「SNAPPERS」</title>
+  <link href="main.css" rel="stylesheet">
 </head>
-<body id="portfolio">
-  
+
+<body class="portfolio">
+
   <!-- header始まり -->
-  <header>
-    <nav>
-      <ul class="global-nav">
-        <li><a href="">menu1</a></li>
-        <li><a href="">menu2</a></li>
-        <li><a href="">menu3</a></li>
+  <header class="header">
+    <nav class="header__global-nav">
+      <ul class="global-nav-list">
+        <li class="global-nav-list__item"><a href="">menu1</a></li>
+        <li class="global-nav-list__item"><a href="">menu2</a></li>
+        <li class="global-nav-list__item"><a href="">menu3</a></li>
       </ul>
     </nav>
   </header>
   <!-- header終わり -->
-  <div class="test"></div>
+  <!-- <div class="test"></div> -->
   <!-- wrap始まり -->
-  <div id="wrap" class="clearfix">
-    <div class="content">
-      <div class="main">
-        <h1>Section1</h1>
-        <p>ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</p>
-        <section>
-          <h2><a href=""><img src="./picture/portfolio-photo.jpg" alt="PHOTOGRAPH"></a></h2>
-          <p>
+  <article class="article">
+    <div class="article__content">
+      <main class="works">
+        <h1 class="works__heading">Section1</h1>
+        <p class="works__text">ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</p>
+        <section class="work-overview">
+          <h2 class="work-overview__img"><a href=""><img src="./picture/portfolio-photo.jpg" alt="PHOTOGRAPH"></a></h2>
+          <p class="work-overview__text">
             ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
             ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
             <a href="">詳しくみる ≫</a>
           </p>
         </section>
-        <section>
-          <h2><a href="" ><img src="./picture/portfolio-video.jpg" alt="VIDEO"></a></h2>
-          <p>
+        <section class="work-overview">
+          <h2 class="work-overview__img"><a href=""><img src="./picture/portfolio-video.jpg" alt="VIDEO"></a></h2>
+          <p class="work-overview__text">
             ほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふが
             ほげふがほげふほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふが
             <a href="">詳しくみる ≫</a>
           </p>
         </section>
-      </div>
+      </main>
       <aside class="sidebar">
-        <section>
-          <h2>Sidebar</h2>
-          <ul>
-            <li><a href="">リスト1</a></li>
-            <li><a href="">リスト2</a></li>
-            <li><a href="">りスト3</a></li>
+          <h2 class="sidebar__heading">Sidebar</h2>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><a href="">リスト1</a></li>
+            <li class="sidebar-list__item"><a href="">リスト2</a></li>
+            <li class="sidebar-list__item"><a href="">りスト3</a></li>
           </ul>
-        </section>
       </aside>
     </div>
-  </div>
+  </article>
   <!-- wrap終わり -->
-  
+
   <!-- footer始まり -->
-  <footer>
-    <small>(C)2020 Nextbeat</small>
+  <footer class="footer">
+    <section class="footer__copyright">(C)2020 Nextbeat</section>
   </footer>
   <!-- footer終わり -->
-  
+
 </body>
+
 </html>
