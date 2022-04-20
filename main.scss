@@ -21,18 +21,18 @@ body {
     position: relative;
 }
 
-ul {
+%ul {
     margin: 0;
     padding: 0;
 }
 
-a {
+%link {
     color: #3583aa;
     text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .portfolio {
@@ -55,6 +55,8 @@ a:hover {
 }
 
 .global-nav-list {
+    @extend %ul;
+
     &__item {
         float: left;
         list-style: none;
@@ -63,14 +65,15 @@ a:hover {
         font-family: 'Bitter', serif;
     }
 
-    &__item a {
+    &__link {
+        @extend %link;
         color: #ffffff;
-    }
-
-    &__item a:hover {
-        border-bottom: 2px solid #ffffff;
-        padding-bottom: 3px;
-        text-decoration: none;
+        
+        &:hover {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 3px;
+            text-decoration: none;
+        }
     }
 }
 
@@ -118,6 +121,14 @@ a:hover {
         }
     }
 
+    &__img-link {
+        @extend %link;
+    }
+
+    &__more-link{
+        @extend %link;
+    }
+
     &__text {}
 }
 
@@ -135,10 +146,13 @@ a:hover {
 }
 
 .sidebar-list {
+    @extend %ul;
+
     font-size: 16px;
     margin-left: 20px;
 
-    & a {
+    &__link {
+        @extend %link;
         color: #333333;
     }
 
